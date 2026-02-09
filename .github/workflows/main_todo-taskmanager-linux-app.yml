@@ -24,7 +24,7 @@ jobs:
           distribution: 'microsoft'
 
       - name: Build Spring Boot backend with Maven
-        working-directory: todo-backend
+        working-directory: todo-backend/todo-backend
         run: mvn clean package -DskipTests
 
       - name: Upload JAR artifact
@@ -60,5 +60,6 @@ jobs:
           app-name: todo-taskmanager-linux-app
           slot-name: Production
           package: '*.jar'
+
 
 
